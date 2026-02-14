@@ -83,6 +83,7 @@
 </head>
 
 <body>
+    
 
 <div class="card">
     <h1>Priyadharshini ❤️</h1>
@@ -107,6 +108,7 @@
 
 <script>
 function yesClicked() {
+    document.getElementById("bgMusic").play();
     alert("💖 Priyadharshini, என் வாழ்க்கையின் ஒவ்வொரு நாளும் உன்னுடன் தான் இருக்க வேண்டும் 💖");
 }
 
@@ -119,4 +121,7 @@ function moveNo() {
 </script>
 
 </body>
-</html>
+    <audio id="bgMusic" loop>
+  <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
