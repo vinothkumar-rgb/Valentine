@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: radial-gradient(circle at top, #1a1a1a, #000000);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .card {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(255, 0, 100, 0.4);
+        max-width: 350px;
+    }
+
+    h1 {
+        color: #ff4d88;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #f2f2f2;
+    }
+
+    .buttons {
+        margin-top: 25px;
+        position: relative;
+        height: 80px;
+    }
+
+    button {
+        padding: 10px 22px;
+        font-size: 16px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #yesBtn {
+        background: #ff4d88;
+        color: #fff;
+    }
+
+    #yesBtn:hover {
+        background: #ff1a66;
+    }
+
+    #noBtn {
+        position: absolute;
+        background: #444;
+        color: #fff;
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 13px;
+        color: #ccc;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Priyadharshini ❤️</h1>
+    <h2>Will you be my Valentine?</h2>
+
+    <p>
+        இந்த உலகத்தில் எல்லாம் தாற்காலிகம்…  
+        ஆனால் உன்னிடம் எனக்கு இருக்கும் காதல் மட்டும் நிரந்தரம் 💖  
+        என் வாழ்க்கையின் அழகான காரணம் நீ தான்.
+    </p>
+
+    <div class="buttons">
+        <button id="yesBtn" onclick="yesClicked()">YES 💕</button>
+        <button id="noBtn" onmouseover="moveNo()">NO 😜</button>
+    </div>
+
+    <div class="footer">
+        Forever Yours,<br>
+        VinothKumar
+    </div>
+</div>
+
+<script>
+function yesClicked() {
+    alert("💖 Priyadharshini, என் வாழ்க்கையின் ஒவ்வொரு நாளும் உன்னுடன் தான் இருக்க வேண்டும் 💖");
+}
+
+function moveNo() {
+    const btn = document.getElementById("noBtn");
+    const x = Math.random() * 250 - 125;
+    const y = Math.random() * 100 - 50;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+}
+</script>
+
+</body>
+</html>
